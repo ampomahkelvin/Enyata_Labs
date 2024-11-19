@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", sans-serif;
+  @apply text-[#2B3442];
+}
+
+html {
+  @apply bg-light-card;
+}
+
+h1 {
+  @apply text-[16px] font-bold leading-[38px];
+  @apply md:text-[26px];
+}
+
+h2 {
+  @apply text-[13px] font-bold;
+  @apply md:text-[22px] leading-[33px];
+}
+
+h3 {
+  @apply text-[13px];
+  @apply text-[16px] leading-[24px];
+}
+
+h4 {
+  @apply text-[11px];
+  @apply md:text-[13px] md:leading-[20px];
+}
+
+body {
+  @apply text-[13px];
+  @apply text-[15px] leading-[25px];
+}
+
+/* Dark Mode Styles */
+html.dark {
+  @apply bg-dark-html-background;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark p,
+html.dark li {
+  @apply text-white;
+}
+
+html.dark .app {
+  @apply bg-dark-card;
+}
